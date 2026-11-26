@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# NOTE: .env.production IS committed because Vite inlines the values into
+# the bundle at build time and the only key in there is the ChangeNow API
+# key, which is already client-side public anyway. Rotate via vendor portal
+# if it ever leaks abuse. The parent (repo-level) .gitignore excludes
+# `.env.*`, so we explicitly re-include it here.
+!.env.production
+
+# Local env files (keep .env.example)
+.env
+.env.*
+!.env.example
